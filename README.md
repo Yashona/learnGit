@@ -19,3 +19,5 @@ add nocom.html 222
 
 
 add commit.html 333
+
+remove commit.html 1102
