@@ -32,3 +32,5 @@ add commit.html 333  000
 
 remove nocom.html
 
+remove index.html 20171102
+
