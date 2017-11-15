@@ -213,54 +213,7 @@
 		        });
 		      }
 
-		    /*  用tp框架接收前端提交到后台的代码  20170926    */
-		    /** 修改头像  *
 
-			    public function head(){
-			        header("Content-type:text/html;charset=utf-8");
-			        $userid = $_SESSION['login_userid'];
-			        if(!$userid){
-			            echo '<script>window.location.href="/User/Login"</scrip>';  //此处script与前面形成封闭，故用scrip
-			            exit;
-			        }
-			        $Model = M("userinfo");
-			        $user = $Model->where("userid = $userid")->find();
-			        $this->assign("user",$user);
-
-			        $this->display();
-			    }
-
-			    public function head_action(){
-			        $userid = $_SESSION['login_userid'];
-			        if(!$userid) {
-			            echo 0;
-			            exit;
-			        }
-			        $data = I("post.data");
-			        $base_img = str_replace('data:image/jpeg;base64,','',$data);
-			        $path = "uploads/head/";
-			        $output_file = time().rand(1000,9999).'.jpg';
-			        $path = $path.$output_file;
-			        $res = file_put_contents($path, base64_decode($base_img));
-			        if(!$res){
-			            echo 0;
-			        }else{
-			            $Model = M("userinfo");
-			            $condition['userid'] = $userid;
-			            $data = $Model->where($condition)->find();
-			            if(!$data){
-			                $map['userid'] = $userid;
-			                $map['head'] = $path;
-			                $Model->add($map);
-			            }else{
-			                $map['head'] = $path;
-			                $Model->where($condition)->save($map);
-			            }
-			            echo 1;
-			        }
-			    }
-
- */
 
 
 
