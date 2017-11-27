@@ -49,3 +49,9 @@ change master hhello worldhello worldello world;
 change a.html   efghi
 
 create a feature
+
+
+rm 222.html
+
+
+xg feature.html
