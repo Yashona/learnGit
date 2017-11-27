@@ -55,3 +55,5 @@ rm 222.html
 
 
 xg feature.html
+
+test upper or small
