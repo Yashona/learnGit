@@ -59,3 +59,5 @@ xg feature.html
 test upper or small
 
 remote a.html
+
+rm three_branch.html
