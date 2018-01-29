@@ -56,3 +56,6 @@ change master hhello worldhello worldello world;
 
 remove 222.html
 add  bbb.html
+
+
+change a.html
